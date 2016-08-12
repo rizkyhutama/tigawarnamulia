@@ -13,11 +13,14 @@
 
 	</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'mekanikpintar-theme' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'mekanikpintar-theme' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'mekanikpintar-theme' ), 'mekanikpintar-theme', '<a href="http://underscores.me/" rel="designer">Rizky Hutama</a>' ); ?>
+	<footer>
+		<div class="wrapper">
+            <ul>
+                <li><a href="">About MEKANIK PINTAR</a></li>
+                <li><a href="">Contact Us</a></li>
+                <li><a href="">Privacy Policy</a></li>
+                <li><a href="">Sitemap</a></li>
+            </ul>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
