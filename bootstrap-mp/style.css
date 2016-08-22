@@ -1,0 +1,161 @@
+body{
+    padding: 0;
+}
+
+.navbar{
+    height: 88px;
+}
+
+.navbar-header{
+    padding: 5px;
+}
+
+.navbar-brand{
+    display: flex;
+    align-items:center;
+    padding: 0px;
+}
+
+.navbar-brand img{
+    padding: 5px 5px 5px 5px;
+    margin-top: 20px;
+}
+
+.navbar-nav {
+    padding: 8px;
+}
+
+.navbar-nav li{
+    margin: 10px;
+}
+
+#container-header{
+    padding: 0px;
+    background-color: #002244;
+}
+
+.container-fluid{
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#container-technews{
+    background-color: #002244;
+}
+
+#container-carreview{
+    background-image: url(images/background-tools.png);
+    background-size: contain;
+}
+
+#container-tipstrick{
+    background-color: #c7e83f;
+}
+
+#container-contactus{
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color:#f0f0f0;
+}
+
+.judul-menu{
+    text-align: center;
+}
+
+#judul-technews{
+    color: white;
+}
+
+#judul-carreview{
+    color: #002244;
+}
+
+#judul-tipstrick{
+    color: #002244;
+}
+
+.thumbnail{
+    margin: 0px 10px; 0px 10px;
+    overflow: auto;
+}
+
+
+#thumbnail-gambarutama img{
+    width: 100%;
+    height: 100%;       
+}
+
+.thumbnail img{
+    width: 100%;
+    height: 100%;
+}
+
+#thumbnail-fokusutama{
+    padding: 0;
+}
+
+#thumbnail-fokusutama p{
+    padding: 10px 10px 10px 10px;
+    height: 263px;
+}
+
+#thumbnail-tipstrick{
+    background-color: #c7e83f;
+    box-shadow: none;
+    border: none;
+    padding: 20px;
+}
+
+#thumbnail-contactus{
+    padding: 20px;
+    background-color: #f0f0f0;
+    text-align: center;
+    border: none;
+    box-shadow: none;
+}
+
+#logo-abu{
+    width: 60%;
+    height: 80%;
+}
+
+.caption{
+    padding-bottom: 10px;
+}
+
+.caption h2{
+    padding: 0px 10px 0px 10px;
+}
+
+.caption p{
+    height: 160px;
+    padding: 5px 10px 10px 10px;
+    text-align: left;
+}
+
+.form-tengah a{
+    color: #c7e83f;
+}
+
+#logo-socmed li{
+    display:inline-block;
+    margin: 0px 50px 0px 20px;
+}
+
+#form-subscribe{
+    margin: 0px 40px 0px 50px;
+}
+
+#container-footer{
+    height: 80px;
+    background-color: #666666;
+}
+
+#container-footer button{
+    margin: 5px 70px 5px 70px;
+    border-radius: 10px;
+    color: white;
+    border-color: #c7e83f;
+}
+
