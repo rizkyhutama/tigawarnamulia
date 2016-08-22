@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <link href="style.css" rel="stylesheet">
     <title>Test Bootstrap</title>
 
     <!-- Bootstrap -->
@@ -27,33 +28,41 @@
   </head>
   <body>
   
-   <!--Header Navigation-->
-    <nav class="navbar navbar-inverse">
+<!--Header Navigation-->
+    
+     <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid" id="container-navbar">
+    <!-- Brand and toggle get grouped for better mobile display-->
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#target-list">
+            <a class="navbar-brand" href="#">
+            <img src="images/logo-mpbiru.jpg" alt="logo-header" class="img-responsive">
+            </a>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#target-list">
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a href="#" class="navbar-brand">Mekanik Pintar</a>
-        </div>
-        
+            </div>
+            
         <div class="collapse navbar-collapse" id="target-list">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="#">HOME</a></li>
+                <li><a href="#">HOME</a></li>
                 <li><a href="#">TECH NEWS</a></li>
                 <li><a href="#">CAR REVIEW</a></li>
                 <li><a href="#">TIPS & TRICK</a></li>
                 <li><a href="#">CONTACT</a></li>
             </ul>
         </div>
+        </div>
     </nav>
+    
   <!--Akhir Header Navigation-->
+  
+  
 
 
  <!-- Carousel
-    ================================================== -->
-    <div class="container-fluid">    
+    ================================================== -->    
      <div id="banner-carousel" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
       <ol class="carousel-indicators">
@@ -64,31 +73,31 @@
       <!-- Wrapper for slide -->
       <div class="carousel-inner" role="listbox">
         <div class="item active">
-          <img class="first-slide" src="image/thumbnail_car-1.jpg" alt="First slide"> <div class="container">
+          <img class="first-slide" src="images/foto-banner.jpg" alt="First slide"> <div class="container">
             <div class="carousel-caption">
               <h1>Example headline.</h1>
               <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+              <p><a class="btn btn-md btn-primary" href="#" role="button">Sign up today</a></p>
             </div>
           </div>
         </div>
         <div class="item">
-          <img class="second-slide" src="image/thumbnail_car-2.jpg" alt="Second slide">
+          <img class="second-slide" src="images/thumbnail_car-2.jpg" alt="Second slide">
           <div class="container">
             <div class="carousel-caption">
               <h1>Another example headline.</h1>
               <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+              <p><a class="btn btn-md btn-primary" href="#" role="button">Learn more</a></p>
             </div>
           </div>
         </div>
         <div class="item">
-          <img class="third-slide" src="image/thumbnail_car-3.jpg" alt="Third slide">
+          <img class="third-slide" src="images/thumbnail_car-3.jpg" alt="Third slide">
           <div class="container">
             <div class="carousel-caption">
               <h1>One more for good measure.</h1>
               <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+              <p><a class="btn btn-md btn-primary" href="#" role="button">Browse gallery</a></p>
             </div>
           </div>
         </div>
@@ -101,136 +110,237 @@
         <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
       </a>
-    </div><!-- /.carousel -->
-   
+    </div>
+    <!-- /.carousel -->  
    
 <!-- Awal container/konten -->           
     
-        <div class="jumbotron">
-        
+    <div class="container-fluid" id="container-fokusutama">
+        <h5 class="text-center">Cari Tahu Berbagai Macam Informasi Tentang Otomotif di sini</h5>
     <div class="row">
-  <div class="col-lg-8 col-lg-offset-2">
-    <div class="input-group">
-      <input type="text" class="form-control" placeholder="Search for...">
-      <span class="input-group-btn">
-        <button class="btn btn-info" type="button">Go!</button>
+      <div class="col-lg-6 col-lg-offset-3">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Search for...">
+          <span class="input-group-btn">
+            <button class="btn btn-info" type="button">Go!</button>
       </span>
     </div><!-- /input-group -->
   </div><!-- /.col-lg-6 -->
 </div><!-- /.row -->        
-        <br><br>
+    <br><br>    
          
  <!-- Fokus utama -->
-        
-    <div class="row">
-       
+    
+    <div class="container">      
+    <div class="row" id="fokus-utama">
+       <h2 class="judul-menu">FOKUS UTAMA</h2>
+       <br>
         <div class="col-sm-6 col-md-6">
-            <div class="thumbnail">
-                <img src="image/logo-mp.jpg" alt="fokus-utama">
+            <div class="thumbnail" id="thumbnail-gambarutama">
+                <img src="images/tumbnail_fokus-utama.jpg" alt="fokus-utama">
             </div>    
         </div>
-    
         <div class="col-sm-6 col-md-6">
-            <div class="thumbnail">
+            <div class="thumbnail" id="thumbnail-fokusutama">
                 <div class="caption">
-                   <h5>tanggal post</h5>
-                    <h2>Judul Konten</h2>
-                    <p>Isi konten</p>
-                    <a href="#" class="btn btn-info">Read More</a>
+                    <h1 class="judul-konten"><strong>Judul Konten</strong></h1>
+                    <p class="konten-fokusutama">Isi konten</p>
+                    <button class="btn btn-link" role="link" type="submit" name="op" value="#">Read More</button>
                 </div>
             </div>
         </div>
+    </div>
+    </div>
+    <br>
     </div>    
-    <br><br><br>
     
-<!-- Fokus Utama -->
-                
+<!-- Akhir Fokus Utama -->
+
+<!-- Awal Konten Tech & News -->
+           
+    <div class="container-fluid" id="container-technews">                      
     <div class="row">
-     
+     <h2 class="judul-menu" id="judul-technews">TECH & NEWS</h2>
+     <br>
+     <div class="container">
     <div class="col-sm-6 col-md-4">
         <div class="thumbnail">
-            <img src="image/logo-mp.jpg" alt="car-review1">
+            <img class="img-responsive" src="images/thumbnail_tech-1.jpg" alt="tech-news1" id="foto-konten">
             <div class="caption">
-                <h2>Judul konten</h2>
-                <p>Isi konten</p>
-                <a href="#" class="btn btn-info">Read More</a>
-            </div>
+                <h2 class="judul-konten">Judul konten</h2>
+                <p class="isi-konten">Isi konten</p>
+                 <button class="btn btn-link" role="link" type="submit" name="op" value="#">Read More</button>
+                </div>
         </div>
     </div> 
        
      <div class="col-sm-6 col-md-4">
         <div class="thumbnail">
-            <img src="image/logo-mp.jpg">
+            <img class="img-responsive" src="images/thumbnail_tech-2.jpg" alt="tech-news2" id="foto-konten">
             <div class="caption">
-                <h2>Judul konten</h2>
-                <p>Isi konten</p>
-                <a href="#" class="btn btn-info">Read More</a>
+                <h2 class="judul-konten">Judul konten</h2>
+                <p class="isi-konten">Isi konten</p>
+                 <button class="btn btn-link" role="link" type="submit" name="op" value="#">Read More</button>
             </div>
         </div>
     </div>
        
      <div class="col-sm-6 col-md-4">
         <div class="thumbnail">
-            <img src="image/logo-mp.jpg" alt="car-review1">
+            <img class="img-responsive" src="images/thumbnail_tech-3.jpg" alt="tech-news3" id="foto-konten">
             <div class="caption">
-                <h2>Judul konten</h2>
-                <p>Isi konten</p>
-                <a href="#" class="btn btn-info">Read More</a>
+                <h2 class="judul-konten">Judul konten</h2>
+                <p class="isi-konten">Isi konten</p>
+                <button class="btn btn-link" role="link" type="submit" name="op" value="#alamat link">Read More</button>
             </div>
         </div>
     </div>
-    
-     <div class="col-lg-2 col-lg-offset-5">
-        <a class="btn btn-primary btn-lg btn-block" href="#" role="button">Link</a>
-     </div>                                 
-        
     </div>
-    
-    
-    <br><br><br><br><br>
-    
+    <br><br>
+        <div class="form-tengah text-center">
+        <a class="btn btn-primary btn-lg " href="#" role="button">Baca Selengkapnya</a>
+    </div>
+    </div>
+    <br>                             
+    </div>
+<!-- Akhir Konten Tech & News -->
+       
+<!-- Awal Konten Car Review -->       
+    <div class="container-fluid" id="container-carreview">
     <div class="row">
-     
+     <h2 class="judul-menu" id="judul-carreview">CAR REVIEW</h2>
+     <br>
+     <div class="container">
     <div class="col-sm-6 col-md-4">
         <div class="thumbnail">
-            <img src="image/logo-mp.jpg" alt="car-review1">
+            <img class="img-responsive" src="images/thumbnail_car-1.jpg" alt="car-review1" id="foto-konten">
             <div class="caption">
-                <h2>Judul konten</h2>
-                <p>Isi konten</p>
-                <a href="#" class="btn btn-info">Read More</a>
+                <h2 class="judul-konten">Judul konten</h2>
+                <p class="isi-konten">Isi konten</p>
+                 <button class="btn btn-link" role="link" type="submit" name="op" value="#">Read More</button>
             </div>
         </div>
     </div> 
           
      <div class="col-sm-6 col-md-4">
         <div class="thumbnail">
-            <img src="image/logo-mp.jpg">
+            <img class="img-responsive" src="images/thumbnail_car-2.jpg" alt="car-review2" id="foto-konten">
             <div class="caption">
-                <h2>Judul konten</h2>
-                <p>Isi konten</p>
-                <a href="#" class="btn btn-info">Read More</a>
+                <h2 class="judul-konten">Judul konten</h2>
+                <p class="isi-konten">Isi konten</p>
+                 <button class="btn btn-link" role="link" type="submit" name="op" value="#">Read More</button>
             </div>
         </div>
     </div>
        
      <div class="col-sm-6 col-md-4">
         <div class="thumbnail">
-            <img src="image/logo-mp.jpg" alt="car-review1">
+            <img class="img-responsive" src="images/thumbnail_car-3.jpg" alt="car-review3" id="foto-konten">
             <div class="caption">
-                <h2>Judul konten</h2>
-                <p>Isi konten</p>
-                <a href="#" class="btn btn-info">Read More</a>
+                <h2 class="judul-konten">Judul konten</h2>
+                <p class="isi-konten">Isi konten</p>
+                <button class="btn btn-link" role="link" type="submit" name="op" value="#">Read More</button>
             </div>
         </div>
     </div>               
-    
-    <div class="col-lg-2 col-lg-offset-5">
-        <a class="btn btn-primary btn-lg btn-block" href="#" role="button">Link</a>
+    </div>
+    <br><br>
+    <div class="form-tengah text-center">
+        <a class="btn btn-primary btn-lg " href="#" role="button">Baca Selengkapnya</a>
+    </div>
+    </div>
+    <br>
+    </div>                 
+<!-- Akhir konten Car Review -->
+            
+<!-- Awal Konten Tips & Trick -->    
+    <div class="container-fluid" id="container-tipstrick">
+        <h2 class="judul-menu" id="judul-tipstrick">TIPS & TRICK</h2>
+        <p><center>Pilih salah satu kategori dibawah ini</center></p>
+        <br><br>
+    <div class="row" id="logo-tipstrick">
+       <div class="col-md-2 col-md-offset-1">
+           <div class="thumbnail" id="thumbnail-tipstrick">
+               <a href="#"><img src="images/tips_perawatan.png" alt="logo-perawatan" style="height:107px;width:170px;"></a>  
+           </div>
+       </div>
+        <div class="col-md-2">
+            <div class="thumbnail" id="thumbnail-tipstrick">
+                <a href="#"><img src="images/tips_kecepatan.png" alt="logo-kecepatan" style="height:113px;width:110px;"></a>    
+           </div>
+        </div>
+        <div class="col-md-2">
+            <div class="thumbnail" id="thumbnail-tipstrick">
+                <a href="#"><img src="images/tips_bermanuver.png" alt="logo-bermanuver" style="width:138px;height:107px;"></a>
+            </div>   
+       </div>
+       <div class="col-md-2">
+           <div class="thumbnail" id="thumbnail-tipstrick">
+               <a href="#"><img src="images/tips_exterior.png" alt="logo-exterior" style="width:122px;height:99px;"></a>
+           </div>
+       </div>
+       <div class="col-md-2">
+           <div class="thumbnail" id="thumbnail-tipstrick">
+                <a href="#"><img src="images/tips_interior.png" alt="logo-interior" style="width:94px;height:114px;"></a> 
+           </div>  
+       </div>   
+       </div>
+       <br>
+       <div class="form-tengah text-center">
+        <a class="btn btn-primary btn-lg" href="#" role="button">Tips Lengkap Mekanik Pintar</a>
+    </div>
+    <br>
     </div> 
-                     
-    </div>
+ <!-- Akhir konten tips & trick -->   
     
+<!-- Awal konten contact us -->    
+    <div class="container-fluid" id="container-contactus">
+        <h2 class="judul-menu">CONTACT US</h2>
+    <div class="row" id="kolom-kontak">
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail" id="thumbnail-contactus">
+            <a><center><img src="images/logo-abu.png" alt="logo-abu" id="logo-abu"></center></a>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail" id="thumbnail-contactus">
+                <h4>Mekanika (Bahasa Latin mechanicus, dari Bahasa Yunani mechanikos, "seseorang yang ahli di bidang mesin") adalah jenis ilmu khusus yang mempelajari fungsi dan pelaksanaan mesin, alat atau benda yang seperti mesin.mekanika merupakan bagian yang sangat penting dalam ilmu fisika terutama untuk ahli saints dan ahli teknik Mekanika (Mechanics) juga berarti ilmu pengetahuan yang mempelajari gerakan suatu benda serta efek gaya dalam gerakan itu.</h4>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail" id="thumbnail-contactus">
+                <h4>FOLLOW MEKANIKPINTAR SOCIAL MEDIA</h4>
+                <ul id="logo-socmed">
+                    <li><a href="#"><img src="images/link-fb.png" alt="link-fb"></a></li>
+                    <li><a href="#"><img src="images/link-twitter.png" alt="link-twitter"></a></li>
+                    <li><a href="#"><img src="images/link-ig.png" alt="link-ig"></a></li>
+                    <li><a href="#"><img src="images/link-youtube.png" alt="link-toutube"></a></li> 
+                </ul>
+            
+                <h4>SUBSCRIBE TO OUR NEWS</h4>
+                    <div class="input-group text-center" id="form-subscribe">
+                        <input type="text" class="form-control" placeholder="Enter Your Email">
+                        <span class="input-group-btn">
+                        <button class="btn btn-info" type="button">Go!</button>
+                        </span>
+                    </div>
+                </div>  
+            </div>
+                
+        </div>    
     </div>
+ <!-- Akhir Konten Kontak -->
+    
+<!-- Awal Footer -->
+    <div class="container-fluid text-center" id="container-footer">
+       <div class="row">
+        <button type="button" class="btn btn-link">About MEKANIK PINTAR</button>
+        <button type="button" class="btn btn-link">Contact Us</button>
+        <button type="button" class="btn btn-link">Privacy Policy</button>
+        <button type="button" class="btn btn-link">Sitemap</button>
+    </div>
+    </div>   
+
         
 <!-- Akhir container / konten -->
     
