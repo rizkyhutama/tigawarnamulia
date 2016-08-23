@@ -26,6 +26,7 @@ body{
     height: auto;
     background-color: #000033;
     margin-bottom: 0;
+    border: none;
 }
 
 .navbar-nav li{
