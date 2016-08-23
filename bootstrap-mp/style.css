@@ -1,43 +1,67 @@
 body{
-    padding: 0;
+    padding: 0px;
 }
 
-.navbar{
-    height: 88px;
-}
+/* normalize header class */
 
-.navbar-header{
-    padding: 5px;
+.navbar>.container .navbar-brand .navbar > .container-fluid .navbar-brand
+{
+    margin: 0;
 }
 
 .navbar-brand{
-    display: flex;
-    align-items:center;
-    padding: 0px;
+    padding: 0;
+    margin: 0;
+    height: auto;
+    line-height: normal;
 }
 
 .navbar-brand img{
-    padding: 5px 5px 5px 5px;
-    margin-top: 20px;
+    padding: 10px;
+    margin: 0;
+    margin-left: 10px;
 }
 
-.navbar-nav {
-    padding: 8px;
+.navbar{
+    height: auto;
+    background-color: #000033;
 }
 
 .navbar-nav li{
-    margin: 10px;
+    padding: 0;
 }
 
-#container-header{
-    padding: 0px;
-    background-color: #002244;
+#link-header{
+    float: right;
+    padding-top: 0;
+}
+
+@media(min-width: 960px){
+    .navbar-nav li{
+        margin: 25px 20px 20px 20px;
+    }
+}
+
+.navbar-toggle{
+        vertical-align: middle;
+        width: 50px;
+        height: 50px;
+        padding-left: 13px;
+        margin: 22px 20px;
 }
 
 .container-fluid{
     margin: 0;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 5px 15px;
+}
+
+#container-navbar{
+    padding: 0px 10px 0px 10px;
+}
+
+#container-carousel{
+    margin: 0;
+    padding: 0;
 }
 
 #container-technews{
@@ -76,23 +100,25 @@ body{
 }
 
 .thumbnail{
-    margin: 0px 10px; 0px 10px;
+    margin: 5px 10px;
     overflow: auto;
 }
 
+#thumbnail-gambarutama{
+    border: none;
+}
 
 #thumbnail-gambarutama img{
-    width: 100%;
-    height: 100%;       
+    width: 98%;
 }
 
 .thumbnail img{
     width: 100%;
-    height: 100%;
 }
 
 #thumbnail-fokusutama{
     padding: 0;
+    border: none;
 }
 
 #thumbnail-fokusutama p{
@@ -140,22 +166,32 @@ body{
 
 #logo-socmed li{
     display:inline-block;
+    text-align: center;
     margin: 0px 50px 0px 20px;
 }
 
 #form-subscribe{
-    margin: 0px 40px 0px 50px;
+    margin: 0px 20px;
 }
 
 #container-footer{
-    height: 80px;
+    height: auto;
     background-color: #666666;
 }
 
 #container-footer button{
-    margin: 5px 70px 5px 70px;
+    margin: 10px 10px;
     border-radius: 10px;
     color: white;
     border-color: #c7e83f;
 }
+
+
+#footer-search{
+    margin-top: 10px;
+    border-radius: 10px;
+    border-color: #c7e83f;
+}
+
+
 
