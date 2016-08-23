@@ -25,6 +25,7 @@ body{
 .navbar{
     height: auto;
     background-color: #000033;
+    margin-bottom: 0;
 }
 
 .navbar-nav li{
