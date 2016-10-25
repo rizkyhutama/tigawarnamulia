@@ -378,19 +378,6 @@ ol {
 	margin: 0 0 1.5em 3em;
 }
 
-ul {
-	list-style: disc;
-}
-
-ol {
-	list-style: decimal;
-}
-
-li > ul,
-li > ol {
-	margin-bottom: 0;
-	margin-left: 1.5em;
-}
 
 dt {
 	font-weight: bold;
@@ -506,17 +493,17 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-	color: royalblue;
+	color: #0099ff;
 }
 
 a:visited {
-	color: purple;
+	color: #0099ff;
 }
 
 a:hover,
 a:focus,
 a:active {
-	color: midnightblue;
+	color: #0099ff;
 }
 
 a:focus {
@@ -892,3 +879,212 @@ object {
 .gallery-caption {
 	display: block;
 }
+
+
+
+/*// ADDITIONAL CSS /*///
+
+
+body{
+    font-family:sans-serif;
+    margin: 0;
+}
+
+.wrapper{
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+
+h1.logo{
+   background-image: url(images/logo-mp.png);
+    background-repeat: no-repeat;
+    width: 177px;
+    height: 83px;
+    text-indent: -10000px;
+    float: left;
+    margin: 0;
+}
+
+header nav{
+    float: left;
+}
+
+header nav h2{
+    text-indent: -10000px;
+    height: 0;
+    margin: 0;
+}
+
+header nav li{
+    float: left;
+    list-style-type: none;
+    margin: 15px 20px;
+}
+
+header nav li a{
+    text-decoration: none;
+    color: cornflowerblue;
+    font-size: 17px;
+}
+
+#main-banner, #main-banner img{
+    width: 100%;
+}
+
+#fokus-utama h2{
+    text-align: center;
+    font-size: 25px;
+}
+
+#fokus-utama ul{
+    padding: 0;
+
+}
+
+#fokus-utama img{
+    float: left;
+    margin: 20px;
+}
+
+#tech-news h2{
+    text-align: center;
+    font-size: 25px;
+}
+
+#tech-news ul{
+    padding: 0;
+}
+
+#tech-news li{
+    float: left;
+    width: 345px;
+    margin: 2%;
+    list-style-type: none;
+}
+
+#tech-news li img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#tech-news li a{
+    color: black;
+    text-decoration: none;
+    float: left;
+}
+
+#car-review h2{
+    text-align: center;
+    font-size: 25px;
+}
+
+#car-review ul{
+    padding: 0;
+}
+
+#car-review li{
+    float: left;
+    width: 345px;
+    margin: 2%;
+    list-style-type: none;
+}
+
+#car-review li img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#car-review li a{
+    color: black;
+    text-decoration: none;
+    float: left;
+}
+
+#tips-trick h2{
+    text-align: center;
+    font-size: 25px;
+}
+
+#tips-trick h1{
+    text-align: center;
+    font-size: 15px;
+}
+
+#tips-trick ul{
+    padding: 0;
+}
+    
+#tips-trick li{
+    float: left;
+    list-style-type: none;
+    width: 150px;
+    margin: 3%;
+}
+
+#contact-us h2{
+    text-align: center;
+    font-size: 25px;
+}
+
+#contact-us ul{
+    padding: 0;
+}
+
+h1.logo-abu{
+    background-image: url(images/logo_mp_abu.png);
+    background-repeat: no-repeat;
+    width: 239px;
+    height: 104px;
+    text-indent: -10000px;
+    float: left;
+    margin: 0;
+}
+
+#contact-us li{
+    list-style-type: none;
+    text-align: center;
+    float: left;
+    margin-top: 0;
+    margin-left: 100px;
+    width: 500px;
+}
+
+#contact-us ul:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+footer{
+    background-color: #666666;
+    padding: 15px 0;
+    margin-top: 20px;
+}
+footer.entry-footer{
+	padding: 10px;
+	background-color: grey;
+}
+
+footer:after{
+    content: "";
+    display: block;
+    clear: both;
+    
+}
+
+footer ul{
+    padding: 0;
+}
+
+footer li{
+    float: left;
+    list-style-type: none;
+    color: #ffffff;
+    margin: 3%;
+    text-decoration: none;
+    
+}
+
