@@ -1,0 +1,159 @@
+.logo-footer img{
+    width: 100%;
+    height: auto;
+}
+
+#footer-socmed img{
+    width: 50px;
+    height: auto;
+    margin: 10px 0px 10px 20px;
+}
+
+#footer-links a{
+    color: darkgrey;
+}
+
+#footer-links p{
+    color: darkgrey;
+}
+
+.search-button{
+    background: url(assets/images/favicon-new.png) center center no-repeat;
+    float: right;
+    display: inline-block;
+    position: absolute;
+}
+
+/* NAVBAR STYLE */
+.navbar-logobaru img{
+    width: 350px;
+}
+#konten-navbar{
+    padding: 0px 50px;
+}
+@media (max-width: 767px) {
+    .navbar-logobaru img{
+        width: 300px;
+    }
+    #konten-navbar{
+        padding: 0px;
+    }
+}
+    
+.search-button{
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    background: url(assets/glyphicons/glyphicons/png/glyphicons-28-search.png) center center no-repeat;
+    border: none;
+    position: absolute;
+    left: -80px;
+    opacity: 0.5;
+    top: 20px
+}
+
+.login-link{
+    float: left;
+    font-size: 17px;
+    padding: 5px;
+}
+
+.glyph-user{
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background: url(assets/glyphicons/glyphicons/png/glyphicons-4-user.png) center center no-repeat;
+    padding: 11px;
+    border: 1px solid;
+    border-radius: 20px;
+    margin-left: -10px;
+}
+
+.glyphicon-title img{
+    margin: 0px 7px;
+    height: 22px;
+    width: 22px;
+    opacity: 0.3;
+    font
+}
+
+#konten-category{ 
+    background-color: lightskyblue;
+    margin-top: -300px;
+    min-height: 50px;
+    padding: 13px 20px 0px 50px;
+    color: white;
+}
+#konten-category h5{
+    font-family: sans-serif;
+    font-weight: lighter;
+}
+
+/* ANIMASI PERTAMA */
+#animasi-background{
+    position:relative;
+    background: url(assets/images/background.jpg);
+    background-size:contain;
+    min-height: 350px;
+    animation-name: background-gerak;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@media (max-width: 768px) {
+    #animasi-background{
+        background-size: cover;
+    }
+    .animasi-mobil div{
+        width: 200px;
+        height: 90px;
+    }
+}
+
+.animasi-mobil{
+    position: absolute;
+    bottom: 20px;
+    right: 5px;
+    animation-name: mobil-jalan;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.animasi-mobil div{
+    width: 400px;
+    height: 180px;
+    background: url(assets/images/mobil.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@keyframes mobil-jalan{
+    from{right: -410px;}
+    to{right: 2200px;}
+}
+
+@keyframes background-gerak{
+    from{background-position: 0 0;}
+    to{background-position: 100% 0;}
+}
+
+#mobil-tanjakan img{
+    height: 400px;
+    background-size: cover;
+}
+
+#foto-per-mobile{
+    background-image: url("assets/images/evalia-shockbreaker.png");
+    background-position: 50% 50%;;
+    background-size: cover;;
+    height: 220px;
+}
+
+#foto-kelemahan{
+    background-image: url("assets/images/evalia-kelemahan.png");
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 160px;
+}
